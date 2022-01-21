@@ -11,10 +11,15 @@ The companion will then output a list of potential words for you to try next.
 ## Example
 
 Enter 5-letter word guessed (ex. JUMPS):
+
 SPARK
+
 Enter 5-letter feedback G=Green Y=Yellow B=Black (ex. GBBYB):
+
 GYBBB
+
 Potential Answers:
+
 [scoop, scope, setup, sheep, sleep, slept, sloop, slope, slump, snipe, snoop, steep, stomp, stoop, stump, sweep, swept, swoop]
 
 You can find the Wordle game here:
