@@ -10,7 +10,7 @@ public class App {
       throw new Exception("Empty word list");
     }
 
-    WordleCompanion WorldeCompanion = new WordleCompanion(wordList);
+    WordleCompanion WordleCompanion = new WordleCompanion(wordList);
     Scanner input = new Scanner(System.in);
 
     do {       
@@ -20,14 +20,14 @@ public class App {
         System.out.println("Enter 5-letter feedback G=Green Y=Yellow B=Black (ex. GBBYB):");
         String feedbackString = input.nextLine();
         ArrayList<FeedbackType> feedbacks = feedbacksFromString(feedbackString);
-        WorldeCompanion.addWordGuess(word, feedbacks);
+        WordleCompanion.addWordGuess(word, feedbacks);
         System.out.println("Potential Answers:");
-        System.out.println(WorldeCompanion.getAnswerSuggestions());        
+        System.out.println(WordleCompanion.getAnswerSuggestions());        
       } catch(Exception e) {
         System.out.println("Input error, try this word again");
         continue;
       }      
-    } while (WorldeCompanion.getAnswerSuggestions().size() > 0);
+    } while (WordleCompanion.getAnswerSuggestions().size() > 0);
     input.close();
   }
 
